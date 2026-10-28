@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-plugin-context-tree",
+  "version": "0.1.0",
+  "description": "Branch an OpenCode session into a context tree with switching, links, deletion, node compaction, and shared workspace state",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/cyzroot-jpg/opencode-context-tree",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyzroot-jpg/opencode-context-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cyzroot-jpg/opencode-context-tree/issues"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bun test src/tree.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "context-tree",
+    "branching",
+    "ai-agent"
+  ],
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.27 || ^0.0.0-dev",
+    "@opencode/schema": "^2.0.27 || ^0.0.0-dev",
+    "@opentui/core": ">=0.7.0",
+    "@opentui/solid": ">=0.7.0",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.27",
+    "@opencode/schema": "^2.0.27",
+    "@opentui/core": "^0.7.0",
+    "@opentui/solid": "^0.7.0",
+    "@tsconfig/bun": "^1.0.9",
+    "@types/bun": "^1.4.3",
+    "solid-js": "^1.9.0",
+    "typescript": "^5.9.0"
+  }
+}
